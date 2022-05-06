@@ -87,6 +87,8 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 # アプリ名 筋肉は嘘をつかない
 # アプリケーション概要 自分磨き用筋トレ管理ツール
 
+### 画面詳細は.dioに記載 ### 
+
 
 # Usersテーブル
 
@@ -110,7 +112,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 |  column    |  type  |    option   | 外部キー |
 |------------|--------|-------------|
 | id         | bigint(20)  | null: false | PRIMARY
-| user_id    | bigint(20)     | null: false |
+| user_id    | bigint(20)     | null: false | FK
 | height     | integer     | null: false |
 | weight     | integer     | unique: true, null: false |
 | body_fat_percentage | integer     | null: false |
@@ -139,7 +141,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 |------------|--------|-------------|
 | id         | bigint(20)  | null: false | PRIMARY
 | user_id    | bigint(20) | null: false | FK
-| Calorie    | integer | null: false |
+| Calorie    | text | null: false |
 
 ### - belongsTo :users
 
