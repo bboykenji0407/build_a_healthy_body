@@ -97,6 +97,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 | id         | bigint(20)    | null: false | PRIMARY
 | username   | varchar(100)     | null: false |
 | email      | varchar(255)     | unique: true, null: false |
+| password   | varchar(100)     | null: false |
 | age        | integer    | null: false | (年齢)
 | spouse     | integer    | null: false | (配偶者) id管理 [0 => 有, 1 => 無]
 | hobby      | string     | null: false | (趣味) 
@@ -117,6 +118,8 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 | weight     | integer     | unique: true, null: false |
 | body_fat_percentage | integer     | null: false |
 | skeletal_muscle_percentage | integer    | null: false |
+
+**自撮りした画像も登録したい
 
 ### - belongsTo :users
 
