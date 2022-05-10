@@ -1,0 +1,16 @@
+{
+    "Login": "ログイン",
+    "Logout": "ログアウト",
+    "Register": "会員登録",
+    "Modify": "会員情報修正",
+    "Name": "お名前",
+    "E-Mail Address": "E-mailアドレス",
+    "Password": "パスワード",
+    "Confirm Password": "パスワード再入力",
+    "Remember Me": "ログイン情報を記憶しておく",
+    "Forgot Your Password?": "パスワードを忘れた方はこちら",
+    "Age": "年齢",
+    "Hobby": "趣味",
+    "Spouse": "配偶者",
+    "Children": "子供"
+}
