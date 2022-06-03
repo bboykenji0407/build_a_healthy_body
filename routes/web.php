@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\UsersController;
+use Illuminate\Http\Request;
+use App\User;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -10,11 +13,19 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Route::get('/', 'UsersController@index')->name('index');
+// Route::get('/edit', 'UsersController@edit')->name('edit');
+// Route::get('/update', 'UsersController@update')->name('update');
+// Route::post('/edit', 'UsersController@update')->name('update');
+
+Route::resource('user', 'UsersController')->only(['index', 'edit', 'update'])->middleware('auth');
+
+

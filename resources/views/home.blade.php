@@ -13,8 +13,8 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    You are logged in!
+                    ログインできました！
+                    <span><a href="{{ route('user.index')}}">toppageへ</a></span>
                 </div>
             </div>
         </div>
