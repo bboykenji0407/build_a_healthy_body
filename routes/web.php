@@ -19,12 +19,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-// Route::get('/', 'UsersController@index')->name('index');
-// Route::get('/edit', 'UsersController@edit')->name('edit');
-// Route::get('/update', 'UsersController@update')->name('update');
-// Route::post('/edit', 'UsersController@update')->name('update');
+//Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('user', 'UsersController')->only(['index', 'edit', 'update'])->middleware('auth');
 

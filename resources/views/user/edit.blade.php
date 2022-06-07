@@ -10,7 +10,6 @@
                     <form method="POST" action="{{route('user.update', Auth::user()) }}">
                         @method('PATCH')
                         @csrf
-
                         <div class="form-group row">
                             <label for="username" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
                             <div class="col-md-6">
@@ -119,7 +118,12 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('更新') }}
                                 </button>
+                                <button type="submit" class="btn btn-primary" action="{{ route('user.index')}}">戻る</button>
+
                             </div>
+                        </div>
+                        <div class="form-group row mb-0">
+
                         </div>
                     </form>
                 </div>
