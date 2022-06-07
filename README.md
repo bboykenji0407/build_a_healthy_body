@@ -118,6 +118,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 | weight     | integer     | unique: true, null: false |
 | body_fat_percentage | integer     | null: false |
 | skeletal_muscle_percentage | integer    | null: false |
+| body_image | string | null: true | 
 
 **自撮りした画像も登録したい
 
@@ -134,7 +135,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 | excuse     | text   |  null: true | (言い訳)
 | datetime   | text   | null: false |  
 
-
+カレンダー機能も入れたい。
 ### - belongsTo :users
 
 

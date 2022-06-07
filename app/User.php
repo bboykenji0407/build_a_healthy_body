@@ -110,4 +110,11 @@ class User extends Authenticatable
         4 => '3人',
         5 => 'それ以上'
     ];
+
+    // 「１対１」→ メソッド名は単数形
+    public function body()
+    {
+        // Bodiesモデルのデータを引っ張てくる
+        //return $this->hasOne('Body::class');
+    }
 }
