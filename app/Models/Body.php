@@ -6,7 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Body extends Model
 {
+    public function user() {
+        return $this->belongsTo("App\Models\User");
+    }
+
     protected $fillable = [
+        'user_id',
         'height',
         'weight',
         'body_fat_percentage',
