@@ -115,6 +115,6 @@ class User extends Authenticatable
     public function body()
     {
         // Bodiesモデルのデータを引っ張てくる
-        //return $this->hasOne('Body::class');
+        return $this->hasOne('Body::class');
     }
 }

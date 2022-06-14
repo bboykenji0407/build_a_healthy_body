@@ -12,5 +12,10 @@
     "Age": "年齢",
     "Hobby": "趣味",
     "Spouse": "配偶者",
-    "Children": "子供"
+    "Children": "子供",
+    "Height": "身長",
+    "Weight": "体重",
+    "Body_fat_percentage": "体脂肪率",
+    "Skeletal_muscle_percentage": "骨格筋率",
+    "Body_image": "身体画像"
 }

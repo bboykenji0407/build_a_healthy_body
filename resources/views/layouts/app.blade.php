@@ -59,6 +59,7 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
+                                    <a class="dropdown-item" href="{{ route('Bodies.index') }}">{{ __('身体情報') }}</a>
                                     <a href="{{ route('user.edit', Auth::user()) }}" class="dropdown-item">{{ __('Modify') }}</a>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf

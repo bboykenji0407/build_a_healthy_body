@@ -6,6 +6,7 @@
             <div class="col-md-5">
                 <div class="card">
                     <div class="card-header">{{ __(Auth::user()->username) }}さんのプロフィール</span>
+                            <span style="margin-left: 250px"><a href="{{route('Bodies.create')}}">身体情報の登録</a></span>
                         <div class="card-body">
                             <div class="form-group row">
                                 <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>

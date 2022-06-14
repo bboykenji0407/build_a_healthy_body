@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\UsersController;
+use App\Http\Controllers\BodiesController;
 use Illuminate\Http\Request;
 use App\User;
 /*
@@ -13,9 +14,7 @@ use App\User;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/' , 'BodiesController@index')->name('Bodies.index');
 
 Auth::routes();
 
@@ -23,4 +22,4 @@ Auth::routes();
 
 Route::resource('user', 'UsersController')->only(['index', 'edit', 'update'])->middleware('auth');
 
-
+Route::resource('Bodies', 'BodiesController');
